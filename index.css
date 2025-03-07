@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* White Box Container */
+.resume-container {
+    background: white;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(56, 55, 55, 0.2);
+    margin-top: 20px;
+}
+
+/* Header Styling with Intensified Glow */
+.header-box {
+    background: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 40px #008170;
+    animation: enhancedGlowEffect 4s infinite alternate ease-in-out;
+}
+
+/* Stronger Glowing Animation for Header */
+@keyframes enhancedGlowEffect {
+    0% { box-shadow: 0 0 20px #008170; }
+    50% { box-shadow: 0 0 60px #0B666A, 0 0 90px #35A29F, 0 0 120px #97FEED; }
+    100% { box-shadow: 0 0 30px #008170; }
+}
+
+/* Contact Icons with Softer Glow */
+.contact-icons {
+    margin-top: 10px;
+}
+
+.contact-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 0 8px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #008170, #0B666A);
+    box-shadow: 0 0 12px rgba(0, 255, 200, 0.4);
+    animation: iconGlow 3.5s infinite alternate ease-in-out;
+}
+
+/* Adjusted Glowing Effect for Icons */
+@keyframes iconGlow {
+    0% { box-shadow: 0 0 8px rgba(0, 255, 200, 0.3); }
+    50% { box-shadow: 0 0 25px rgba(0, 255, 200, 0.7), 0 0 40px rgba(0, 200, 150, 0.5); }
+    100% { box-shadow: 0 0 15px rgba(0, 255, 200, 0.4); }
+}
+
+/* Section Box Styling */
+.section-box {
+    background: black;
+    padding: 15px;
+    color: white;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 2px solid blue;
+    box-shadow: 0 0 25px blue;
+    animation: sectionGlow 4s infinite alternate ease-in-out, jumpEffect 1.5s ease-in-out infinite;
+}
+
+/* Enhanced Glowing Effect for Sections */
+@keyframes sectionGlow {
+    0% { box-shadow: 0 0 15px rgba(26, 65, 237, 0.6); }
+    50% { box-shadow: 0 0 45px rgba(0, 72, 255, 0.9), 0 0 85px rgba(0, 255, 0, 0.7); }
+    100% { box-shadow: 0 0 20px rgba(0, 72, 255, 0.6); }
+}
+
+/* Jumping Animation */
+@keyframes jumpEffect {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+/* Heading Styles */
+h1 {
+    margin: 0;
+    font-size: 30px; 
+        color:rgba(162, 218, 32, 0.793);  /* OR color: cyan; */
+        font-size: 34px;
+        font-weight: bold;
+        /* Makes it all uppercase for impact */
+    
+    
+}
+
+h2 {
+    color: gold;
+}
+
+/* Custom Bullet Points with Stylish Glow */
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+ul li {
+    position: relative;
+    padding-left: 30px; /* Space for bullet icon */
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+ul li:hover {
+    transform: scale(1.05); /* Subtle hover effect */
+}
+
+/* Custom Bullet Symbol with Glow Effect */
+ul li::before {
+    content: "●";  /* Bullet Symbol (Solid Circle) */
+    font-size: 20px;
+    color: cyan; /* Bullet color */
+    position: absolute;
+    left: 0;
+    top: 2px;
+    text-shadow: 0 0 10px cyan;
+    animation: bulletGlow 1.5s infinite alternate;
+}
+
+/* Bullet Glowing Animation */
+@keyframes bulletGlow {
+    0% { text-shadow: 0 0 5px cyan; }
+    100% { text-shadow: 0 0 15px cyan; }
+}
+
+/* Style for Phone Number */
+.phone-number {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.phone-number:hover {
+    text-decoration: underline;
+}
+
+/* Updated h3 Styling */
+h3 {
+    color: cyan;
+    font-weight: bold;
+}
